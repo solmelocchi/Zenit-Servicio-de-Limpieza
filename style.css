@@ -216,7 +216,7 @@ body {
 /* ── QUIÉNES SOMOS – fondo ── */
 #nosotros {
     background:
-      linear-gradient(rgba(242,242,242,0.82), rgba(242,242,242,0.82)),
+      linear-gradient(rgba(49,21,60,0.82), rgba(49,21,60,0.82)),
       url(imagenBorrosa.jpg") center/cover no-repeat;
     background-attachment: fixed;
 }
@@ -479,4 +479,5 @@ html {
     scroll-behavior: smooth;
 
 }
+
 
