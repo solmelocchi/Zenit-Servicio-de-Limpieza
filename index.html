@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenit | Servicios de Limpieza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a href="https://wa.me/5492954223975?text=Hola%2C%20mi%20nombre%20es%3A%0AQuisiera%20consultar%20sobre..."
+   target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <span class="whatsapp-tooltip">¡Escribinos!</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="#inicio"    onclick="closeMobileNav()">Inicio</a>
+    <a href="#nosotros"  onclick="closeMobileNav()">Quiénes somos</a>
+    <a href="#servicios" onclick="closeMobileNav()">Servicios</a>
+    <a href="#galeria"   onclick="closeMobileNav()">Nuestros Trabajos</a>
+    <a href="#contacto"  onclick="closeMobileNav()">Presupuesto</a>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="mainHeader">
+    <div class="container">
+        <img src="assets/img/logo.png" alt="Zenit" class="logo">
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Quiénes somos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Nuestros Trabajos</a>
+            <a href="#contacto">Presupuesto</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menú" onclick="toggleMobileNav()">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>El estándar más alto en servicios de limpieza</h1>
+        <p>Elevamos cada espacio a su mejor versión con excelencia, detalle y cuidado profesional.</p>
+        <div class="hero-buttons">
+            <a href="#contacto" class="btn-nav">Pedir presupuesto</a>
+            <a href="https://wa.me/5492954223975?text=Hola%2C%20mi%20nombre%20es%3A%0AQuisiera%20consultar%20sobre..." target="_blank" class="btn-nav">WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section id="nosotros" class="section light">
+    <div class="container">
+        <h2 class="fade-in">Quiénes somos</h2>
+        <p class="section-text fade-in">
+            Zenit representa el punto más alto de calidad en servicios de limpieza.
+            Trabajamos con un enfoque personalizado, cuidando cada detalle para
+            crear ambientes que transmiten frescura, armonía y bienestar.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section dark">
+    <div class="container">
+        <h2 class="fade-in">Nuestros servicios</h2>
+        <div class="cards">
+            <div class="card fade-in">
+                <div class="card-icon">🧹</div>
+                <h3>Limpieza integral</h3>
+                <p>Espacios impecables con atención completa y profesional.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">✨</div>
+                <h3>Limpieza profunda</h3>
+                <p>Intervenciones intensivas para resultados visibles.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🏗️</div>
+                <h3>Post obra</h3>
+                <p>Dejamos tu espacio listo para habitar.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🏠</div>
+                <h3>Hogares y oficinas</h3>
+                <p>Planes adaptados a cada necesidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<!-- GALERIA -->
+<section id="galeria" class="section light">
+    <div class="container">
+        <h2>Antes y Despues</h2>
+
+        <div class="before-after">
+
+            <!-- PAR 1 -->
+            <div class="before-after-item">
+                <img src="assets/img/antes1.jpg" alt="Antes">
+                <img src="assets/img/despues1.jpg" alt="Después">
+            </div>
+
+            <!-- PAR 2 -->
+            <div class="before-after-item">
+                <img src="assets/img/antes2.jpg" alt="Antes">
+                <img src="assets/img/despues2.jpg" alt="Después">
+            </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section dark">
+    <div class="container">
+        <h2 class="fade-in">Solicitá tu presupuesto</h2>
+        <form action="https://formspree.io/f/xgvnkrrb" method="POST" class="form fade-in">
+            <input type="text"  name="nombre"   placeholder="Nombre"  required>
+            <input type="email" name="email"    placeholder="Email"   required>
+            <input type="text"  name="telefono" placeholder="Teléfono">
+            <textarea name="mensaje" placeholder="Contanos qué necesitás" required rows="4"></textarea>
+            <button type="submit">Enviar consulta</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <a href="https://www.instagram.com/limpieza.zenit" target="_blank" class="footer-ig">
+            Instagram · @limpieza.zenit
+        </a>
+        <p>© 2026 Zenit Servicios de Limpieza</p>
+    </div>
+</footer>
+
+<script>
+/* CURSOR */
+const cursor = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top  = mouseY + 'px';
+});
+(function animateRing() {
+    ringX += (mouseX - ringX) * 0.12;
+    ringY += (mouseY - ringY) * 0.12;
+    cursorRing.style.left = ringX + 'px';
+    cursorRing.style.top  = ringY + 'px';
+    requestAnimationFrame(animateRing);
+})();
+document.querySelectorAll('a, button, .dot').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px'; cursor.style.height = '20px';
+        cursor.style.background = '#31153C';
+        cursorRing.style.width = '52px'; cursorRing.style.height = '52px';
+    });
+    el.addEventListener('mouseleave', () => {
+        cursor.style.width = '12px'; cursor.style.height = '12px';
+        cursor.style.background = '#4E2E60';
+        cursorRing.style.width = '36px'; cursorRing.style.height = '36px';
+    });
+});
+
+/* HEADER SHADOW */
+window.addEventListener('scroll', () => {
+    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 30);
+});
+
+/* MENÚ MOBILE */
+function toggleMobileNav() {
+    const nav = document.getElementById('mobileNav');
+    const ham = document.getElementById('hamburger');
+    if (nav.classList.contains('open')) {
+        nav.classList.remove('open'); ham.classList.remove('open');
+        document.body.style.overflow = '';
+        setTimeout(() => { nav.style.display = 'none'; }, 400);
+    } else {
+        nav.style.display = 'flex';
+        requestAnimationFrame(() => { nav.classList.add('open'); ham.classList.add('open'); });
+        document.body.style.overflow = 'hidden';
+    }
+}
+function closeMobileNav() {
+    const nav = document.getElementById('mobileNav');
+    const ham = document.getElementById('hamburger');
+    nav.classList.remove('open'); ham.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { nav.style.display = 'none'; }, 400);
+}
+
+
+/* ANIMACIONES SCROLL */
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+    });
+}, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+
+document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
