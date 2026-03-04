@@ -175,7 +175,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(49,21,60,0.8), rgba(49,21,60,0.8)),
-                url("assets/img/hero.jpg") center/cover;
+                url("hero.jpg") center/cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -217,7 +217,7 @@ body {
 #nosotros {
     background:
       linear-gradient(rgba(242,242,242,0.82), rgba(242,242,242,0.82)),
-      url(img/imagenBorrosa.jpg") center/cover no-repeat;
+      url(imagenBorrosa.jpg") center/cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -225,14 +225,14 @@ body {
 #servicios {
     background:
       linear-gradient(rgba(49,21,60,0.92), rgba(49,21,60,0.92)),
-      url("img/imagenBorrosa.jpg") center/cover no-repeat;
+      url("imagenBorrosa.jpg") center/cover no-repeat;
 }
 
 /* ── CONTACTO – fondo ── */
 #contacto {
     background:
       linear-gradient(rgba(49,21,60,0.83), rgba(49,21,60,0.83)),
-      url("img/imagenpresu.jpg") center/cover no-repeat;
+      url("imagenpresu.jpg") center/cover no-repeat;
 }
 
 /* ══════════════════════════════════════
@@ -479,3 +479,4 @@ html {
     scroll-behavior: smooth;
 
 }
+
