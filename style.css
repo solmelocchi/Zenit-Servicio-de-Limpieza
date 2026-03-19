@@ -387,7 +387,7 @@ body {
     padding: 120px 80px;
     background:
         linear-gradient(rgba(49,21,60,0.84), rgba(49,21,60,0.84)),
-        url('imagen oficina') center/cover no-repeat fixed;
+        url('imagen oficina.jpg') center/cover no-repeat fixed;
 }
 .porque-inner { max-width: 1100px; margin: auto; text-align: center; }
 .porque h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem,4vw,3rem); font-weight: 400; color: white; margin-bottom: 60px; }
