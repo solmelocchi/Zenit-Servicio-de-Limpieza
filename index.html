@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenit | Servicios de Limpieza</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Zenit | Servicios de Limpieza Profesional</title>
+    <meta name="description" content="Servicios de limpieza profesional en Mendoza. Limpieza integral, profunda y post obra para hogares y oficinas.">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="zenit_style.css">
 </head>
 <body>
 
@@ -13,149 +14,321 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- BOTÓN WHATSAPP FLOTANTE -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/5492954223975?text=Hola%2C%20mi%20nombre%20es%3A%0AQuisiera%20consultar%20sobre..."
-   target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+   target="_blank" class="whatsapp-float" aria-label="WhatsApp">
     <span class="whatsapp-tooltip">¡Escribinos!</span>
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- MOBILE NAV DRAWER -->
+<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
     <a href="#inicio"    onclick="closeMobileNav()">Inicio</a>
     <a href="#nosotros"  onclick="closeMobileNav()">Quiénes somos</a>
     <a href="#servicios" onclick="closeMobileNav()">Servicios</a>
-    <a href="#galeria"   onclick="closeMobileNav()">Nuestros Trabajos</a>
+    <a href="#galeria"   onclick="closeMobileNav()">Trabajos</a>
     <a href="#contacto"  onclick="closeMobileNav()">Presupuesto</a>
 </div>
 
 <!-- HEADER -->
 <header class="header" id="mainHeader">
-    <div class="container">
+    <div class="header-inner">
         <img src="logo.png" alt="Zenit" class="logo">
         <nav class="nav">
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Quiénes somos</a>
             <a href="#servicios">Servicios</a>
-            <a href="#galeria">Nuestros Trabajos</a>
-            <a href="#contacto">Presupuesto</a>
+            <a href="#galeria">Trabajos</a>
+            <a href="#contacto" class="nav-cta">Presupuesto</a>
         </nav>
-        <button class="hamburger" id="hamburger" aria-label="Menú" onclick="toggleMobileNav()">
+        <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO — layout dividido estilo Duo0 -->
 <section id="inicio" class="hero">
-    <div class="hero-content">
-        <h1>El estándar más alto en servicios de limpieza</h1>
+    <div class="hero-left">
+        <div class="hero-tag">✦ Mendoza · Argentina</div>
+        <h1>
+            Limpieza<br>
+            <span class="hero-static">de </span><span id="palabraDinamica" class="hero-dynamic"></span>
+            <br>profesional
+        </h1>
         <p>Elevamos cada espacio a su mejor versión con excelencia, detalle y cuidado profesional.</p>
-        <div class="hero-buttons">
-            <a href="#contacto" class="btn-nav">Pedir presupuesto</a>
-            <a href="https://wa.me/5492954223975?text=Hola%2C%20mi%20nombre%20es%3A%0AQuisiera%20consultar%20sobre..." target="_blank" class="btn-nav">WhatsApp</a>
+        <div class="hero-ctas">
+            <a href="#contacto" class="btn-primary">Pedir presupuesto</a>
+            <a href="https://wa.me/5492954223975" target="_blank" class="btn-ghost">WhatsApp →</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hstat">
+                <span class="hstat-num" data-target="2">0</span><span>+</span>
+                <p>Años de experiencia</p>
+            </div>
+            <div class="hstat-div"></div>
+            <div class="hstat">
+                <span class="hstat-num" data-target="100">0</span><span>+</span>
+                <p>Espacios transformados</p>
+            </div>
+            <div class="hstat-div"></div>
+            <div class="hstat">
+                <span class="hstat-num" data-target="100">0</span><span>%</span>
+                <p>Satisfacción garantizada</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-right">
+        <!-- Reemplazá hero-persona.jpg con una foto real del equipo -->
+        <div class="hero-img-wrap">
+            <img src="hero.jpg" alt="Equipo Zenit" class="hero-persona">
+            <div class="hero-badge-float">
+                <span class="badge-icon">⭐</span>
+                <div>
+                    <strong>Calidad garantizada</strong>
+                    <small>en cada servicio</small>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- QUIENES SOMOS -->
-<section id="nosotros" class="section light">
-    <div class="container">
-        <h2 class="fade-in">Quiénes somos</h2>
-        <p class="section-text fade-in">
-            Zenit representa el punto más alto de calidad en servicios de limpieza.
-            Trabajamos con un enfoque personalizado, cuidando cada detalle para
-            crear ambientes que transmiten frescura, armonía y bienestar.
-        </p>
+<!-- BAND — franja de confianza -->
+<div class="trust-band fade-in">
+    <span>✦ Limpieza integral</span>
+    <span>✦ Limpieza profunda</span>
+    <span>✦ Post obra</span>
+    <span>✦ Hogares y oficinas</span>
+    <span>✦ Mendoza y alrededores</span>
+    <span>✦ Resultados visibles</span>
+</div>
+
+<!-- QUIÉNES SOMOS -->
+<section id="nosotros" class="nosotros">
+    <div class="nosotros-inner">
+        <div class="nosotros-img fade-in-left">
+            <!-- Reemplazá equipo.jpg con foto real -->
+            <img src="imagen oficina.jpg" alt="Equipo Zenit">
+            <div class="nos-badge fade-in">
+                <strong>Zenit</strong>
+                <small>El punto más alto</small>
+            </div>
+        </div>
+        <div class="nosotros-texto fade-in-right">
+            <span class="section-tag">✦ Quiénes somos</span>
+            <h2>Limpieza que<br>transforma espacios</h2>
+            <p>Zenit representa el punto más alto de calidad en servicios de limpieza. Trabajamos con un enfoque personalizado, cuidando cada detalle para crear ambientes que transmiten frescura, armonía y bienestar.</p>
+            <p>Cada trabajo es una oportunidad para demostrar nuestro compromiso con la excelencia. Utilizamos productos profesionales y técnicas probadas para garantizar resultados que superan las expectativas.</p>
+            <div class="nos-values">
+                <div class="nos-val"><span>🧼</span> Productos profesionales</div>
+                <div class="nos-val"><span>⏱️</span> Puntualidad garantizada</div>
+                <div class="nos-val"><span>🔒</span> Personal de confianza</div>
+                <div class="nos-val"><span>✨</span> Resultados visibles</div>
+            </div>
+            <a href="#contacto" class="btn-primary">Solicitar servicio</a>
+        </div>
     </div>
 </section>
 
 <!-- SERVICIOS -->
-<section id="servicios" class="section dark">
-    <div class="container">
-        <h2 class="fade-in">Nuestros servicios</h2>
-        <div class="cards">
-            <div class="card fade-in">
-                <div class="card-icon">🧹</div>
+<section id="servicios" class="servicios">
+    <div class="servicios-inner">
+        <div class="servicios-header fade-in">
+            <span class="section-tag light">✦ Lo que hacemos</span>
+            <h2 class="white">Nuestros servicios</h2>
+            <p class="white-sub">Soluciones de limpieza profesional para cada necesidad</p>
+        </div>
+        <div class="servicios-grid">
+            <div class="srv-card fade-in">
+                <div class="srv-num">01</div>
+                <div class="srv-icon">🧹</div>
                 <h3>Limpieza integral</h3>
-                <p>Espacios impecables con atención completa y profesional.</p>
+                <p>Cobertura completa de todos los espacios. Pisos, ventanas, baños, cocina y cada rincón impecable.</p>
+                <a href="#contacto" class="srv-link">Consultar →</a>
             </div>
-            <div class="card fade-in">
-                <div class="card-icon">✨</div>
+            <div class="srv-card fade-in">
+                <div class="srv-num">02</div>
+                <div class="srv-icon">✨</div>
                 <h3>Limpieza profunda</h3>
-                <p>Intervenciones intensivas para resultados visibles.</p>
+                <p>Intervención intensiva para resultados que se ven desde el primer día. Ideal para el primer servicio.</p>
+                <a href="#contacto" class="srv-link">Consultar →</a>
             </div>
-            <div class="card fade-in">
-                <div class="card-icon">🏗️</div>
+            <div class="srv-card fade-in">
+                <div class="srv-num">03</div>
+                <div class="srv-icon">🏗️</div>
                 <h3>Post obra</h3>
-                <p>Dejamos tu espacio listo para habitar.</p>
+                <p>Dejamos tu espacio nuevo listo para habitar. Eliminamos polvo, pintura y residuos de construcción.</p>
+                <a href="#contacto" class="srv-link">Consultar →</a>
             </div>
-            <div class="card fade-in">
-                <div class="card-icon">🏠</div>
+            <div class="srv-card fade-in">
+                <div class="srv-num">04</div>
+                <div class="srv-icon">🏢</div>
                 <h3>Hogares y oficinas</h3>
-                <p>Planes adaptados a cada necesidad.</p>
+                <p>Planes adaptados a cada espacio y frecuencia. Mensual, quincenal o semanal según tu necesidad.</p>
+                <a href="#contacto" class="srv-link">Consultar →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- GALERIA -->
-<!-- GALERIA -->
-<section id="galeria" class="section light">
-    <div class="container">
-        <h2>Antes y Despues</h2>
-
-        <div class="before-after">
-
-            <!-- PAR 1 -->
-            <div class="before-after-item">
-                <img src="antes1.jpg" alt="Antes">
-                <img src="despues1.jpg" alt="Después">
+<!-- POR QUÉ ZENIT -->
+<section class="porque fade-in">
+    <div class="porque-inner">
+        <span class="section-tag">✦ Por qué elegirnos</span>
+        <h2>La diferencia Zenit</h2>
+        <div class="porque-grid">
+            <div class="pq-item">
+                <div class="pq-icon">🎯</div>
+                <h3>Atención al detalle</h3>
+                <p>Cada centímetro importa. No dejamos nada sin limpiar.</p>
             </div>
-
-            <!-- PAR 2 -->
-            <div class="before-after-item">
-                <img src="antes2.jpg" alt="Antes">
-                <img src="despues2.jpg" alt="Después">
+            <div class="pq-item">
+                <div class="pq-icon">💬</div>
+                <h3>Comunicación directa</h3>
+                <p>Respuesta inmediata y seguimiento de cada servicio.</p>
             </div>
-</div>
+            <div class="pq-item">
+                <div class="pq-icon">🛡️</div>
+                <h3>Garantía de satisfacción</h3>
+                <p>Si algo no quedó perfecto, lo corregimos sin costo.</p>
+            </div>
+            <div class="pq-item">
+                <div class="pq-icon">🌿</div>
+                <h3>Productos seguros</h3>
+                <p>Utilizamos productos aptos para niños, mascotas y alérgicos.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- GALERÍA -->
+<section id="galeria" class="galeria">
+    <div class="galeria-inner">
+        <div class="galeria-header fade-in">
+            <span class="section-tag light">✦ Resultados reales</span>
+            <h2 class="white">Antes y después</h2>
+            <p class="white-sub">El antes y después habla por sí solo</p>
+        </div>
+        <div class="ba-grid">
+            <div class="ba-card fade-in">
+                <div class="ba-imgs">
+                    <div class="ba-img-wrap">
+                        <img src="antes1.jpg" alt="Antes">
+                        <span class="ba-label">ANTES</span>
+                    </div>
+                    <div class="ba-img-wrap">
+                        <img src="despues1.jpg" alt="Después">
+                        <span class="ba-label after">DESPUÉS</span>
+                    </div>
+                </div>
+                <p>Limpieza profunda · Cocina</p>
+            </div>
+            <div class="ba-card fade-in">
+                <div class="ba-imgs">
+                    <div class="ba-img-wrap">
+                        <img src="antes2.jpg" alt="Antes">
+                        <span class="ba-label">ANTES</span>
+                    </div>
+                    <div class="ba-img-wrap">
+                        <img src="despues2.jpg" alt="Después">
+                        <span class="ba-label after">DESPUÉS</span>
+                    </div>
+                </div>
+                <p>Post obra · Departamento</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso fade-in">
+    <div class="proceso-inner">
+        <span class="section-tag">✦ Cómo funciona</span>
+        <div class="proceso-steps">
+            <div class="proc-step">
+                <div class="proc-num">01</div>
+                <div class="proc-icon">📋</div>
+                <h3>Nos contactás</h3>
+                <p>Por WhatsApp o formulario. Te respondemos en minutos.</p>
+            </div>
+            <div class="proc-arrow">→</div>
+            <div class="proc-step">
+                <div class="proc-num">02</div>
+                <div class="proc-icon">💬</div>
+                <h3>Coordinamos</h3>
+                <p>Te enviamos un presupuesto y acordamos fecha y horario.</p>
+            </div>
+            <div class="proc-arrow">→</div>
+            <div class="proc-step">
+                <div class="proc-num">03</div>
+                <div class="proc-icon">✨</div>
+                <h3>Transformamos</h3>
+                <p>Nuestro equipo llega y deja todo impecable.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="section dark">
-    <div class="container">
-        <h2 class="fade-in">Solicitá tu presupuesto</h2>
-        <form action="https://formspree.io/f/xgvnkrrb" method="POST" class="form fade-in">
-            <input type="text"  name="nombre"   placeholder="Nombre"  required>
-            <input type="email" name="email"    placeholder="Email"   required>
-            <input type="text"  name="telefono" placeholder="Teléfono">
-            <textarea name="mensaje" placeholder="Contanos qué necesitás" required rows="4"></textarea>
-            <button type="submit">Enviar consulta</button>
-        </form>
+<section id="contacto" class="contacto">
+    <div class="contacto-inner">
+        <div class="contacto-texto fade-in-left">
+            <span class="section-tag light">✦ Contacto</span>
+            <h2 class="white">Solicitá tu presupuesto</h2>
+            <p class="white-sub">Completá el formulario y te respondemos en menos de 24hs.</p>
+            <div class="contacto-feat">
+                <div class="cf">✓ Respuesta rápida</div>
+                <div class="cf">✓ Presupuesto gratuito</div>
+                <div class="cf">✓ Servicio personalizado</div>
+            </div>
+            <a href="https://www.instagram.com/limpieza.zenit" target="_blank" class="ig-link">
+                Instagram · @limpieza.zenit →
+            </a>
+        </div>
+        <div class="contacto-form fade-in-right">
+            <div class="form-head">
+                <h3>¿En qué podemos ayudarte?</h3>
+                <p>Te contactamos a la brevedad</p>
+            </div>
+            <form action="https://formspree.io/f/xgvnkrrb" method="POST" class="form">
+                <input type="text"  name="nombre"   placeholder="Tu nombre" required>
+                <input type="email" name="email"    placeholder="Tu email"  required>
+                <input type="text"  name="telefono" placeholder="Tu teléfono">
+                <select name="servicio">
+                    <option value="" disabled selected>Tipo de servicio</option>
+                    <option>Limpieza integral</option>
+                    <option>Limpieza profunda</option>
+                    <option>Post obra</option>
+                    <option>Hogar / Oficina</option>
+                    <option>Otro</option>
+                </select>
+                <textarea name="mensaje" placeholder="Contanos qué necesitás" rows="3"></textarea>
+                <button type="submit">Enviar consulta →</button>
+            </form>
+        </div>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="footer-content">
-        <a href="https://www.instagram.com/limpieza.zenit" target="_blank" class="footer-ig">
-            Instagram · @limpieza.zenit
-        </a>
-        <p>© 2026 Zenit Servicios de Limpieza</p>
+    <div class="footer-inner">
+        <div class="footer-logo">Zenit</div>
+        <p>Servicios de limpieza profesional en Mendoza</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/limpieza.zenit" target="_blank">Instagram</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <p class="footer-copy">© 2026 Zenit Servicios de Limpieza · Mendoza, Argentina</p>
     </div>
 </footer>
 
 <script>
-/* CURSOR */
+// ══ CURSOR ══
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
 let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-
 document.addEventListener('mousemove', e => {
     mouseX = e.clientX; mouseY = e.clientY;
     cursor.style.left = mouseX + 'px';
@@ -168,32 +341,50 @@ document.addEventListener('mousemove', e => {
     cursorRing.style.top  = ringY + 'px';
     requestAnimationFrame(animateRing);
 })();
-document.querySelectorAll('a, button, .dot').forEach(el => {
+document.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursor.style.width = '20px'; cursor.style.height = '20px';
-        cursor.style.background = '#31153C';
         cursorRing.style.width = '52px'; cursorRing.style.height = '52px';
+        cursorRing.style.borderColor = 'var(--violeta-claro)';
     });
     el.addEventListener('mouseleave', () => {
-        cursor.style.width = '12px'; cursor.style.height = '12px';
-        cursor.style.background = '#4E2E60';
-        cursorRing.style.width = '36px'; cursorRing.style.height = '36px';
+        cursor.style.width = '10px'; cursor.style.height = '10px';
+        cursorRing.style.width = '34px'; cursorRing.style.height = '34px';
+        cursorRing.style.borderColor = 'rgba(154,138,164,0.5)';
     });
 });
 
-/* HEADER SHADOW */
+// ══ TEXTO ANIMADO HERO ══
+const palabras = ['hogares', 'oficinas', 'tu espacio', 'post obra', 'empresas'];
+const el = document.getElementById('palabraDinamica');
+let i = 0, idx = 0, borrando = false;
+const TYPE_SPEED = 70, ERASE_SPEED = 40, HOLD = 1200;
+function loop() {
+    const palabra = palabras[i];
+    if (!borrando) {
+        el.textContent = palabra.slice(0, ++idx);
+        if (idx === palabra.length) setTimeout(() => borrando = true, HOLD);
+    } else {
+        el.textContent = palabra.slice(0, --idx);
+        if (idx === 0) { borrando = false; i = (i + 1) % palabras.length; }
+    }
+    setTimeout(loop, borrando ? ERASE_SPEED : TYPE_SPEED);
+}
+loop();
+
+// ══ HEADER SCROLL ══
 window.addEventListener('scroll', () => {
-    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 30);
+    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 40);
 });
 
-/* MENÚ MOBILE */
+// ══ MOBILE NAV ══
 function toggleMobileNav() {
     const nav = document.getElementById('mobileNav');
     const ham = document.getElementById('hamburger');
     if (nav.classList.contains('open')) {
         nav.classList.remove('open'); ham.classList.remove('open');
         document.body.style.overflow = '';
-        setTimeout(() => { nav.style.display = 'none'; }, 400);
+        setTimeout(() => nav.style.display = 'none', 400);
     } else {
         nav.style.display = 'flex';
         requestAnimationFrame(() => { nav.classList.add('open'); ham.classList.add('open'); });
@@ -205,23 +396,39 @@ function closeMobileNav() {
     const ham = document.getElementById('hamburger');
     nav.classList.remove('open'); ham.classList.remove('open');
     document.body.style.overflow = '';
-    setTimeout(() => { nav.style.display = 'none'; }, 400);
+    setTimeout(() => nav.style.display = 'none', 400);
 }
 
+// ══ CONTADOR STATS ══
+function animarNum(el) {
+    const target = parseInt(el.getAttribute('data-target'));
+    let current = 0;
+    const step = target / (1800 / 16);
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current);
+    }, 16);
+}
+let contadorOk = false;
+const statsObs = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !contadorOk) {
+        contadorOk = true;
+        document.querySelectorAll('.hstat-num').forEach(animarNum);
+    }
+}, { threshold: 0.5 });
+const statsEl = document.querySelector('.hero-stats');
+if (statsEl) statsObs.observe(statsEl);
 
-/* ANIMACIONES SCROLL */
+// ══ ANIMACIONES SCROLL ══
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
     });
-}, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
-
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
 </script>
 </body>
-
 </html>
-
-
