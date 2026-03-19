@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <title>Zenit | Servicios de Limpieza Profesional</title>
     <meta name="description" content="Servicios de limpieza profesional en Mendoza. Limpieza integral, profunda y post obra para hogares y oficinas.">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zenit_style.css">
 </head>
 <body>
 
@@ -39,7 +40,7 @@
             <a href="#nosotros">Quiénes somos</a>
             <a href="#servicios">Servicios</a>
             <a href="#galeria">Trabajos</a>
-             <a href="#contacto">Presupuesto</a>
+            <a href="#contacto">Presupuesto</a>
         </nav>
         <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">
             <span></span><span></span><span></span>
@@ -47,9 +48,9 @@
     </div>
 </header>
 
-<!-- HERO — layout dividido estilo Duo0 -->
-<section id="inicio" class="hero">
-    <div class="hero-left">
+<!-- HERO — foto de fondo centrado -->
+<section id="inicio" class="hero hero-bg">
+    <div class="hero-left hero-centered">
         <div class="hero-tag">✦ Mendoza · Argentina</div>
         <h1>
             Limpieza<br>
@@ -63,12 +64,12 @@
         </div>
         <div class="hero-stats">
             <div class="hstat">
-                <span class="hstat-num" data-target="2">0</span><span>+</span>
+                <span class="hstat-num" data-target="8">0</span><span>+</span>
                 <p>Años de experiencia</p>
             </div>
             <div class="hstat-div"></div>
             <div class="hstat">
-                <span class="hstat-num" data-target="100">0</span><span>+</span>
+                <span class="hstat-num" data-target="500">0</span><span>+</span>
                 <p>Espacios transformados</p>
             </div>
             <div class="hstat-div"></div>
@@ -78,17 +79,16 @@
             </div>
         </div>
     </div>
-    </div>
 </section>
 
-<!-- BAND — franja de confianza -->
+<!-- BAND — franja de confianza con links a servicios -->
 <div class="trust-band fade-in">
-    <span>✦ Limpieza integral</span>
-    <span>✦ Limpieza profunda</span>
-    <span>✦ Post obra</span>
-    <span>✦ Hogares y oficinas</span>
-    <span>✦ Mendoza y alrededores</span>
-    <span>✦ Resultados visibles</span>
+    <a href="#servicios" class="trust-link">✦ Limpieza integral</a>
+    <a href="#servicios" class="trust-link">✦ Limpieza profunda</a>
+    <a href="#servicios" class="trust-link">✦ Post obra</a>
+    <a href="#servicios" class="trust-link">✦ Hogares y oficinas</a>
+    <a href="#servicios" class="trust-link">✦ Mendoza y alrededores</a>
+    <a href="#servicios" class="trust-link">✦ Resultados visibles</a>
 </div>
 
 <!-- QUIÉNES SOMOS -->
@@ -96,7 +96,7 @@
     <div class="nosotros-inner">
         <div class="nosotros-img fade-in-left">
             <!-- Reemplazá equipo.jpg con foto real -->
-            <img src="imagen oficina.jpg" alt="Equipo Zenit">
+            <img src="equipo.jpg" alt="Equipo Zenit">
             <div class="nos-badge fade-in">
                 <strong>Zenit</strong>
                 <small>El punto más alto</small>
@@ -113,7 +113,7 @@
                 <div class="nos-val"><span>🔒</span> Personal de confianza</div>
                 <div class="nos-val"><span>✨</span> Resultados visibles</div>
             </div>
-            <a href="#contacto" class="btn-primary">Solicitar servicio</a>
+            <a href="#contacto" class="btn-violeta">Solicitar servicio</a>
         </div>
     </div>
 </section>
@@ -209,7 +209,7 @@
                         <span class="ba-label after">DESPUÉS</span>
                     </div>
                 </div>
-                <p>Post Obra · Living</p>
+                <p>Limpieza profunda · Cocina</p>
             </div>
             <div class="ba-card fade-in">
                 <div class="ba-imgs">
@@ -222,7 +222,7 @@
                         <span class="ba-label after">DESPUÉS</span>
                     </div>
                 </div>
-                <p>Limpieza profunda · Departamento</p>
+                <p>Post obra · Departamento</p>
             </div>
         </div>
     </div>
@@ -232,6 +232,7 @@
 <section class="proceso fade-in">
     <div class="proceso-inner">
         <span class="section-tag">✦ Cómo funciona</span>
+        <h2>En 3 pasos simples</h2>
         <div class="proceso-steps">
             <div class="proc-step">
                 <div class="proc-num">01</div>
@@ -265,6 +266,7 @@
             <h2 class="white">Solicitá tu presupuesto</h2>
             <p class="white-sub">Completá el formulario y te respondemos en menos de 24hs.</p>
             <div class="contacto-feat">
+                <div class="cf">✓ Sin compromiso</div>
                 <div class="cf">✓ Respuesta rápida</div>
                 <div class="cf">✓ Presupuesto gratuito</div>
                 <div class="cf">✓ Servicio personalizado</div>
@@ -304,6 +306,9 @@
         <p>Servicios de limpieza profesional en Mendoza</p>
         <div class="footer-links">
             <a href="https://www.instagram.com/limpieza.zenit" target="_blank">Instagram</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
         </div>
         <p class="footer-copy">© 2026 Zenit Servicios de Limpieza · Mendoza, Argentina</p>
     </div>
